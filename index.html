@@ -1,0 +1,72 @@
+<html>
+<head>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script src="js/scrollreveal.min.js"></script>
+        <script> window.sr = ScrollReveal();</script>
+        <title>RIZKI FIRDAUS</title>
+<style>
+    body {
+        float           : right;
+        background-color: black;
+        color           : white;
+    }
+    #videoku {
+        z-index         : -1;
+        right           : 0;
+        top             : 0;
+        position        : fixed;
+        min-height      : 100%;
+        max-height      : 100%;
+        min-width       : 75%;
+    }
+    div .sosmed {
+        position        : fixed;
+    }
+    .isi {
+        text-align      : center;
+        color           : white;
+        transform       : skewX(-8deg);
+    }
+    .background {
+        width           : 500px;
+        height          : 100%;
+        color           : white;
+        left            : 0;
+        padding-top     : 250px;
+        position        : fixed;
+        background-color: black;
+        margin-left     : 60px;
+        transform       : skewX(8deg);
+    }
+</style>
+</head>
+<video autoplay id="videoku"><source src="video/cover.mp4"  type="video/mp4"></video>
+<body>
+    <span class="background">
+        <nav class="isi">
+            <h1><b>Guns n' Roses-Don't Cry (Cover)</b></h1>
+            <h3>" Talk to me softly There something in your eyes
+                Don't hang your head in sorrow And please don't cry"</h3>
+        </nav>
+    </span>
+    <div class="sosmed"><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div><a href="http://www.facebook.com" target="_blank">
+            <img src="gbr/fb.jpg" width="50" class="icon img-circle center-block"></a>
+        </div><br>
+        <div><a href="https://plus.google.com" target="_blank">
+            <img src="gbr/gplus.jpg" width="50" class="icon img-circle center-block"></a>
+        </div><br>
+        <div><a href="https://twitter.com" target="_blank">
+            <img src="gbr/twitter.jpg" width="50" class="icon img-circle center-block"></a>
+        </div>
+    </div>
+    <script>
+        $('.icon').hover(function(){
+            $(this).fadeTo("fast",0.5);},
+            function(){
+                $(this).fadeTo("fast",1);
+        });
+    </script>
+</body>
